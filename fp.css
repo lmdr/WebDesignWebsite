@@ -1,0 +1,193 @@
+/* Louis Duller */
+.marg
+{
+	margin-top: 0.8em;
+}
+.tran
+{
+	background-color: inherit;
+	transition: background-color 1s;
+}
+.tran:hover
+{
+	background-color: white;
+}
+#ls
+{
+	list-style-type: none;
+}
+#wrapper
+{
+	margin: auto;
+	min-width: 768px;
+	width: 100%;
+}
+body
+{
+	color: black;
+	font-family: Verdana, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+figure img
+{
+	border-radius: 0.4em;
+	box-shadow: 0 0 0.8em black;
+	height: 320px;
+	margin-bottom: 1em;
+	width: 480px;
+}
+footer
+{
+	border-top: 0.2em solid black;
+	font-style: italic;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	text-align: center;
+}
+footer, header, main, nav, section
+{
+	display: block;
+}
+footer li, nav li
+{
+	display: inline;
+	margin: 0.6em 0;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+}
+footer ul, nav ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+form
+{
+	border: 0.1em solid black;
+}
+form ul
+{
+	list-style-type: none;
+}
+header
+{
+	background-color: lightblue;
+	height: 5em;
+	padding: 2em 4em 2em;
+}
+main
+{
+	padding: 1em;
+}
+nav
+{
+	background-color: lightgray;
+	border-bottom: 0.2em solid black;
+	border-top: 0.2em solid black;
+	padding: 0.5em;
+	text-align: center;
+}
+nav a
+{
+	color: black;
+	font-weight: bold;
+	padding: 0.5em;
+	text-decoration: none;
+}
+nav a:hover
+{
+	background-color: white;
+}
+span.it
+{
+	font-style: italic;
+}
+table
+{
+	border-collapse: collapse;
+	margin-bottom: 1em;
+}
+td, th
+{
+	border: 0.1em solid black;
+	padding: 0.5em;
+}
+th
+{
+	background-color: #dadada;
+}
+@media only screen and (max-width: 64em)
+{
+	#wrapper
+	{
+		margin: 0;
+		max-width: 64em;
+		min-width: 48em;
+		width: auto;
+	}
+	nav li, footer li
+	{
+		display: block;
+	}
+}
+@media only all and (max-width: 37.5em)
+{
+	#wrapper
+	{
+		margin: 0;
+		max-width: 37.5em;
+		min-width: 24em;
+		width: auto;
+	}
+	header
+	{
+		height: auto;
+		min-height: 5em;
+	}
+	nav li, footer li
+	{
+		display: block;
+	}
+}
+@media only print
+{
+	.hdi
+	{
+		display: none;
+	}
+	#wrapper
+	{
+		max-width: initial;
+	}
+	article
+	{
+		page-break-inside: avoid;
+	}
+	body
+	{
+		font-family: serif;
+	}
+	figure img
+	{
+		border: 0.1em solid black;
+	}
+	footer
+	{
+		border: none;
+	}
+	footer ul
+	{
+		display: none;
+	}
+	header
+	{
+		background-color: white;
+		height: auto;
+		padding: initial;
+	}
+	nav
+	{
+		display: none;
+	}
+}
